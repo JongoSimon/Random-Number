@@ -1,6 +1,11 @@
 body {
-    font-family: Verdana;
-    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f4f8;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 #myButton {
@@ -9,6 +14,59 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .myLabels {
     font-size: 3em;
+}
+
+.game-container {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+button {
+    margin: 0.5rem 1rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background: #0078d4;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:disabled {
+    background: #b0b0b0;
+    cursor: not-allowed;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #0078d4;
+}
+
+span[id^="p1_label"], span[id^="p2_label"] {
+    display: inline-block;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0 0.3rem;
+    font-size: 1.5rem;
+    background: #e6f0fa;
+    border-radius: 6px;
+    line-height: 2.2rem;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid #b6d4f7;
+}
+
+#winner {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0a7d2c;
 }
