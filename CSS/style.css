@@ -6,6 +6,7 @@ body {
     justify-content: center;
     background: #f0f4f8;
     font-family: 'Segoe UI', Arial, sans-serif;
+    background-image: url('/dice.jpg');
 }
 
 #myButton {
@@ -47,7 +48,7 @@ button:disabled {
 h3 {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #0078d4;
+    color: #369154;
 }
 
 span[id^="p1_label"], span[id^="p2_label"] {
